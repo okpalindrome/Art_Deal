@@ -1,0 +1,79 @@
+
+
+            
+
+            fieldset, label { margin: 0; padding: 0; }
+            body{ margin: 20px; }
+            h1 { font-size: 1.5em; margin: 10px; }
+
+            .rating { 
+                border: none;
+                float: left;
+            }
+
+            .rating > input { display: none; } 
+            .rating > label:before { 
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005";
+            }
+
+            .rating > .half:before { 
+                content: "\f089";
+                position: absolute;
+            }
+
+            .rating > label { 
+                color: #ddd; 
+                float: right; 
+            }
+
+            .rating > input:checked ~ label, 
+            .rating:not(:checked) > label:hover,  
+            .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+            .rating > input:checked + label:hover, 
+            .rating > input:checked ~ label:hover,
+            .rating > label:hover ~ input:checked ~ label, 
+            .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }  
+
+
+
+
+             .ratings { 
+                border: none;
+                float: left;
+            }
+
+            .ratings > input { display: none; } 
+            .ratings > label:before { 
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005";
+            }
+
+            .ratings > .half:before { 
+                content: "\f089";
+                position: absolute;
+            }
+
+            .ratings > label { 
+                color: #ddd; 
+                float: right; 
+            }
+
+            .ratings > input:checked ~ label, 
+            .ratings:not(:checked) > label:hover,  
+            .ratings:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+            .ratings > input:checked + label:hover, 
+            .ratings > input:checked ~ label:hover,
+            .ratings > label:hover ~ input:checked ~ label, 
+            .ratings > input:checked ~ label:hover ~ label { color: #FFED85;  }        
+
+
+     
