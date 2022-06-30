@@ -8,4 +8,4 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/php@master
         env:
-          SNYK_TOKEN: ${{ 29235cd1-1d27-405f-bce3-c8d59ac73b36 }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
