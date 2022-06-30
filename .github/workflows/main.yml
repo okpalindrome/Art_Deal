@@ -7,6 +7,6 @@ jobs:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/php@master
-      - run: snyk auth ${{ secrets.SNYK_TOKEN }}
+      - run: snyk auth 8f7c2db7-9963-455b-8563-f39813cc47da
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
